@@ -1,22 +1,27 @@
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=martinbrom_SlimyBees&metric=alert_status)](https://sonarcloud.io/dashboard?id=martinbrom_SlimyBees)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=martinbrom_SlimyBees&metric=coverage)](https://sonarcloud.io/dashboard?id=martinbrom_SlimyBees)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=martinbrom_SlimyBees&metric=ncloc)](https://sonarcloud.io/dashboard?id=martinbrom_SlimyBees)
+<p align="center"><img src="docs/banner.svg" alt="SlimyBees" width="100%"></p>
 
-# 林业蜜蜂
+# SlimyBees
 
-SlimyBees is a Slimefun4 addon heavily inspired by the bee portion of the famous MC mod,
-[Forestry](https://www.curseforge.com/minecraft/mc-mods/forestry).
-It adds many bee species which can be discovered, bred and used to produce various materials.
-The productivity of each bee is also determined by its allele values,
-which can be improved by selective breeding, offering a fun mini-game for the endgame stages. 
+Abejas y genética para Slimefun, adaptado al ecosistema Slimefun de **DrakesCraft** (Paper/Purpur 1.21.11, Java 21).
 
-## Features
-Features currently include:
-* Bee Hive world generation
-* The ability to breed bees to discover new species
-* Basic set of species (mainly honey production for now)
+## Qué añade
 
-## Credits
-Many thanks go to:
-* SirSengir and the team behind Forestry
-* TheBusyBiscuit and the team behind Slimefun4 
+Un sistema de apicultura con cría, genética y especies que se descubren cruzando.
+
+## Qué cambiamos
+
+Este repositorio **no es un fork**: es el código original integrado en el ecosistema de
+DrakesCraft (Paper/Purpur 1.21.11, Java 21). Los cambios comunes a todos nuestros ports son:
+
+**Los paquetes de Slimefun.** El core de DrakesCraft está repaquetado, así que un addon de fuera
+no encuentra nada hasta que se remapean sus imports.
+
+**La telemetría, fuera.** bStats abría una conexión a bstats.org cada pocos minutos con datos del
+servidor. Se quitaron las llamadas, los imports y la dependencia — no se sustituyó por un stub
+inerte, que dejaría el código en pie aparentando que hay telemetría.
+
+**Los autoactualizadores, desarmados.** Este jar está recompilado contra nuestro Slimefun; si se
+bajara el de upstream encima, dejaría de cargar. Las actualizaciones se despliegan por SFTP.
+
+**El rastreador de fallos apunta aquí**, no al repositorio original: un fallo de esta versión
+casi nunca es un fallo de allí.
