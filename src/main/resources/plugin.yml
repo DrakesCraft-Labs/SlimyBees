@@ -1,0 +1,28 @@
+name: SlimyBees
+authors: [martinbrom, JackStar]
+description: Forestry Bees Inspired Addon for Slimefun 4
+main: cz.martinbrom.slimybees.SlimyBeesPlugin
+website: https://github.com/martinbrom/SlimyBees
+version: ${project.version}
+api-version: '1.21'
+depend:
+  - Slimefun
+commands:
+  slimybees:
+    description: Use '/slimybees help' for a list of commands
+    usage: /slimybees <command>
+    aliases: sb
+
+permissions:
+  slimybees.command.alter:
+    description: Allows you to do /sb alter
+    default: op
+  slimybees.command.analyze:
+    description: Allows you to do /sb analyze
+    default: op
+  slimybees.command.discover:
+    description: Allows you to do /sb discover
+    default: op
+  slimybees.command.make_unknown:
+    description: Allows you to do /sb unknown
+    default: op
