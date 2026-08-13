@@ -43,15 +43,15 @@ public class BeeAtlasDetailCategory extends AbstractBeeAtlasCategory {
 
     protected static final CustomItemStack ANY_NEST_BEE = new CustomItemStack(
             SlimyBeesHeadTexture.DRONE.getAsItemStack(),
-            ChatColor.GRAY + "任意蜂蜡");
+            ChatColor.GRAY + "Cualquier cera");
 
     protected static final CustomItemStack OTHER_NEST_BEE = new CustomItemStack(
             SlimyBeesHeadTexture.DRONE.getAsItemStack(),
-            ChatColor.GRAY + "任意其他蜂蜡");
+            ChatColor.GRAY + "Cualquier otra cera");
 
     protected static final CustomItemStack OBTAINED_NEST_ITEM = new CustomItemStack(
             Material.BEE_NEST,
-            ChatColor.DARK_GREEN + "在世界中发现");
+            ChatColor.DARK_GREEN + "Se encuentra por el mundo");
 
     private final AlleleSpecies categorySpecies;
 
@@ -128,8 +128,8 @@ public class BeeAtlasDetailCategory extends AbstractBeeAtlasCategory {
             addCultivatedParents(menu, profile, sbProfile);
         } else {
             menu.addItem(CHANCE_ITEM_SLOT, new CustomItemStack(Material.BEEHIVE,
-                    ChatColor.GOLD + "获取途径不止一种",
-                    ChatColor.GOLD + "请参考wiki!"), ChestMenuUtils.getEmptyClickHandler());
+                    ChatColor.GOLD + "Se puede conseguir de varias formas",
+                    ChatColor.GOLD + "¡Consulta la wiki!"), ChestMenuUtils.getEmptyClickHandler());
         }
     }
 

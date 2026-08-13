@@ -68,8 +68,8 @@ public class Beealyzer extends SimpleSlimefunItem<ItemUseHandler> implements Rec
             if (removeItemCharge(e.getItem(), analyzeCost.getValue().floatValue())) {
                 createMenu().open(p);
             } else {
-                p.sendMessage("蜜蜂分析仪没有足够的能量来正常工作! " +
-                        "使用充电台为其充电");
+                p.sendMessage("¡El analizador de abejas no tiene energía suficiente para funcionar! " +
+                        "Cárgalo en una estación de carga");
             }
         };
     }
@@ -81,7 +81,7 @@ public class Beealyzer extends SimpleSlimefunItem<ItemUseHandler> implements Rec
 
     @Nonnull
     private ChestMenu createMenu() {
-        ChestMenu menu = new ChestMenu("蜜蜂分析仪");
+        ChestMenu menu = new ChestMenu("Analizador de abejas");
 
         for (int slot : BACKGROUND_SLOTS) {
             menu.addItem(slot, ChestMenuUtils.getBackground(), (p, s, i, a) -> false);

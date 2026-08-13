@@ -26,8 +26,8 @@ public class BeeAtlasListCategory extends AbstractBeeAtlasCategory {
 
     private static final int CATEGORY_SIZE = 36;
     private static final List<String> CHEAT_MODE_BEE_LORE = Arrays.asList("",
-            ChatColor.YELLOW + "左击" + ChatColor.GRAY + " 获取 " + ChatColor.BOLD + "雌蜂",
-            ChatColor.YELLOW + "右击" + ChatColor.GRAY + " 获取 " + ChatColor.BOLD + "雄蜂");
+            ChatColor.YELLOW + "Clic izquierdo" + ChatColor.GRAY + " obtiene " + ChatColor.BOLD + "Reina",
+            ChatColor.YELLOW + "Clic derecho" + ChatColor.GRAY + " obtiene " + ChatColor.BOLD + "Zángano");
 
     public static final int PREVIOUS_PAGE_SLOT = 46;
     public static final int NEXT_PAGE_SLOT = 52;

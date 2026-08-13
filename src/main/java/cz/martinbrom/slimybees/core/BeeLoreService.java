@@ -24,7 +24,7 @@ import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
 @ParametersAreNonnullByDefault
 public class BeeLoreService {
 
-    public static final String UNKNOWN_LORE = ChatColor.DARK_GRAY + "<未知>";
+    public static final String UNKNOWN_LORE = ChatColor.DARK_GRAY + "<desconocido>";
 
     /**
      * Checks whether the given {@link ItemStack} is considered to be an "unknown" bee

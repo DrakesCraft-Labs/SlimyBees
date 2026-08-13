@@ -29,8 +29,8 @@ import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
 @ParametersAreNonnullByDefault
 public abstract class AbstractBeeAtlasCategory extends FlexItemGroup {
 
-    protected static final ItemStack UNDISCOVERED_SPECIES_ITEM = new CustomItemStack(Material.BARRIER, ChatColor.GRAY + "未发现物种");
-    protected static final ItemStack UNDISCOVERED_CHANCE_ITEM = new CustomItemStack(Material.BARRIER, ChatColor.GRAY + "未发现几率");
+    protected static final ItemStack UNDISCOVERED_SPECIES_ITEM = new CustomItemStack(Material.BARRIER, ChatColor.GRAY + "Especie sin descubrir");
+    protected static final ItemStack UNDISCOVERED_CHANCE_ITEM = new CustomItemStack(Material.BARRIER, ChatColor.GRAY + "Probabilidad sin descubrir");
 
     protected final BeeLoreService loreService;
     protected final BeeRegistry beeRegistry;
@@ -64,7 +64,7 @@ public abstract class AbstractBeeAtlasCategory extends FlexItemGroup {
         }
 
         String suffix = getTitleSuffix();
-        String title = "蜜蜂册" + (suffix == null ? "" : " - " + suffix);
+        String title = "Catálogo de abejas" + (suffix == null ? "" : " - " + suffix);
         ChestMenu menu = createMenu(title);
 
         SurvivalSlimefunGuide guide = (SurvivalSlimefunGuide) Slimefun.getRegistry().getSlimefunGuide(mode);
@@ -77,7 +77,7 @@ public abstract class AbstractBeeAtlasCategory extends FlexItemGroup {
 
         // custom back button
         ItemStack backButton = new CustomItemStack(ChestMenuUtils.getBackButton(p,
-                "", "&f左击: &7返回上一页", "&fShift左击: &7返回主菜单"));
+                "", "&fClic izquierdo: &7página anterior", "&fShift + clic izquierdo: &7volver al menú principal"));
         menu.addItem(1, backButton, (pl, s, i, a) -> {
             if (a.isShiftClicked()) {
                 navigationService.openMainMenu(profile, mode);
@@ -165,7 +165,7 @@ public abstract class AbstractBeeAtlasCategory extends FlexItemGroup {
      */
     protected String createChanceText(double chance) {
         int percentage = (int) Math.ceil(chance * 100);
-        return ChatColor.WHITE + "几率: " + ChatColor.GRAY + percentage + "%";
+        return ChatColor.WHITE + "Probabilidad: " + ChatColor.GRAY + percentage + "%";
     }
 
     @Nullable

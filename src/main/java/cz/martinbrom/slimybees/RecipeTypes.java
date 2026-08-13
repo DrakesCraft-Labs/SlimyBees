@@ -21,25 +21,25 @@ public class RecipeTypes {
     public static final RecipeType BREEDING = new RecipeType(
             SlimyBeesPlugin.getKey("breeding"),
             new CustomItemStack(Material.BEE_SPAWN_EGG,
-                    "&c繁殖",
+                    "&cCría",
                     "",
-                    "&f在蜂箱中",
-                    "&f繁殖两种特定蜜蜂",
-                    "&f获取"));
+                    "&fdentro de la colmena",
+                    "&fCruza dos abejas concretas",
+                    "&fSe obtiene"));
 
     public static final RecipeType BEE_PRODUCT = new RecipeType(
             SlimyBeesPlugin.getKey("bee_product"),
             new CustomItemStack(Material.HONEYCOMB,
-                    "&c蜜蜂产物",
+                    "&cProducto de la abeja",
                     "",
-                    "&f蜜蜂在蜂箱中工作",
-                    "&f所生产的产物"));
+                    "&fLas abejas trabajan dentro de la colmena",
+                    "&fLo que produce"));
 
     public static final RecipeType SBEE_CENTRIFUGE = new RecipeType(
             SlimyBeesPlugin.getKey("sbee_centrifuge"),
             new CustomItemStack(Material.GRINDSTONE,
-                    "&f离心机",
+                    "&fCentrifugadora",
                     "",
-                    "&7放入离心机中获取"));
+                    "&7Se obtiene metiéndolo en la centrifugadora"));
 
 }

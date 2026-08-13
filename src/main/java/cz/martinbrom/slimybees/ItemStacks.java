@@ -28,15 +28,15 @@ public class ItemStacks {
     public static final SlimefunItemStack BEESWAX = new SlimefunItemStack(
             "BEESWAX",
             Material.GLOWSTONE_DUST,
-            "&e蜂蜡油");
+            "&eAceite de cera");
     public static final SlimefunItemStack HONEY_DROP = new SlimefunItemStack(
             "HONEY_DROP",
             Material.GOLD_NUGGET,
-            "&6蜂遗");
+            "&6Herencia de la abeja");
 
-    public static final SlimefunItemStack HONEY_COMB = createHoneycomb("HONEY", "&6蜂蜜");
-    public static final SlimefunItemStack DRY_COMB = createHoneycomb("DRY", "&e干");
-    public static final SlimefunItemStack SWEET_COMB = createHoneycomb("SWEET", "&f甜");
+    public static final SlimefunItemStack HONEY_COMB = createHoneycomb("HONEY", "&6Miel");
+    public static final SlimefunItemStack DRY_COMB = createHoneycomb("DRY", "&eSeco");
+    public static final SlimefunItemStack SWEET_COMB = createHoneycomb("SWEET", "&fDulce");
     // </editor-fold>
 
     // <editor-fold desc="Specialty Products" defaultstate="collapsed">
@@ -44,13 +44,13 @@ public class ItemStacks {
     public static final SlimefunItemStack ROYAL_JELLY = new SlimefunItemStack(
             "ROYAL_JELLY",
             Material.LIGHT_GRAY_DYE,
-            "&6&l蜂王浆",
+            "&6&lJalea real",
             meta -> meta.addItemFlags(ItemFlag.HIDE_ENCHANTS));
     // TODO: 03.06.21 Prevent placing
     public static final SlimefunItemStack POLLEN = new SlimefunItemStack(
             "POLLEN",
             Material.PUMPKIN_SEEDS,
-            "&6&l花粉",
+            "&6&lPolen",
             meta -> meta.addItemFlags(ItemFlag.HIDE_ENCHANTS));
 
     static {
@@ -63,7 +63,7 @@ public class ItemStacks {
     public static final SlimefunItemStack BASIC_FRAME = new SlimefunItemStack(
             "BASIC_FRAME",
             Material.BIRCH_SIGN,
-            "&f基础框架",
+            "&fMarco básico",
             "",
             loreProductionModifier(1.25));
 
@@ -71,21 +71,21 @@ public class ItemStacks {
     public static final SlimefunItemStack ADVANCED_FRAME = new SlimefunItemStack(
             "ADVANCED_FRAME",
             Material.BIRCH_SIGN,
-            "&f高级框架",
+            "&fMarco avanzado",
             "",
             loreProductionModifier(2));
 
     public static final SlimefunItemStack SWEET_FRAME = new SlimefunItemStack(
             "SWEET_FRAME",
             Material.DARK_OAK_SIGN,
-            "&4甜蜜框架",
+            "&4Marco dulce",
             "",
             loreLifespanModifier(0.5));
 
     public static final SlimefunItemStack DEADLY_FRAME = new SlimefunItemStack(
             "DEADLY_FRAME",
             Material.DARK_OAK_SIGN,
-            "&4致命框架",
+            "&4Marco letal",
             "",
             loreLifespanModifier(0.1));
     // </editor-fold>
@@ -94,47 +94,47 @@ public class ItemStacks {
     public static final SlimefunItemStack HIVE_CASING_PLANK = new SlimefunItemStack(
             "HIVE_CASING_PLANK",
             Material.SPRUCE_SLAB,
-            "&6蜂巢板",
+            "&6Placa de panal",
             "",
-            "&f可以组成蜂巢块");
+            "&fSe puede montar en un bloque de panal");
 
     public static final SlimefunItemStack HIVE_CASING = new SlimefunItemStack(
             "HIVE_CASING",
             Material.SPRUCE_PLANKS,
-            "&6蜂巢外壳",
+            "&6Carcasa de panal",
             "",
-            "&f一种蜂箱的重要组成部分",
-            "&f用于工业级蜂箱");
+            "&fUna pieza clave de la colmena",
+            "&fPara la colmena industrial");
 
     public static final SlimefunItemStack BEE_HIVE = new SlimefunItemStack(
             "BEE_HIVE",
             Material.OAK_PLANKS,
-            "&6基础蜂箱",
+            "&6Colmena básica",
             "",
-            "&f给你的蜜蜂一个简单的家",
-            "&f需要手动操作!",
+            "&fUn hogar sencillo para tus abejas",
+            "&f¡Hay que manejarla a mano!",
             "",
             getTieredHiveString(MachineTier.BASIC));
 
     public static final SlimefunItemStack AUTO_BEE_HIVE = new SlimefunItemStack(
             "AUTO_BEE_HIVE",
             Material.STRIPPED_OAK_LOG,
-            "&6全自动蜂箱",
+            "&6Colmena totalmente automática",
             "",
-            "&f一种自动化蜂箱",
-            "&f将雄蜂和雌蜂放于输入槽内",
-            "&f便可自动进行繁殖",
+            "&fUna colmena automática",
+            "&fPon un zángano y una reina en las casillas de entrada",
+            "&fy criará por su cuenta",
             "",
             getTieredHiveString(MachineTier.GOOD));
 
     public static final SlimefunItemStack INDUSTRIAL_BEE_HIVE = new SlimefunItemStack(
             "INDUSTRIAL_BEE_HIVE",
             Material.STRIPPED_CRIMSON_STEM,
-            "&6&l工业蜂箱",
+            "&6&lColmena industrial",
             "",
-            "&f一种顶级的蜂箱",
-            "&f这种蜂箱",
-            "&f大幅度提升了生产效率",
+            "&fLa mejor colmena que hay",
+            "&fEsta colmena",
+            "&fAumenta mucho la producción",
             "",
             getTieredHiveString(MachineTier.END_GAME));
 
@@ -147,14 +147,14 @@ public class ItemStacks {
     public static final SlimefunItemStack SBEE_CENTRIFUGE = new SlimefunItemStack(
             "SBEE_CENTRIFUGE",
             Material.GRINDSTONE,
-            "&7离心机",
+            "&7Centrifugadora",
             "",
             EXTRACTS_MATERIALS_FROM_COMBS);
 
     public static final SlimefunItemStack ELECTRIC_CENTRIFUGE = new SlimefunItemStack(
             "ELECTRIC_CENTRIFUGE",
             Material.IRON_BLOCK,
-            "&7电动离心机 &eI",
+            "&7Centrifugadora eléctrica &eI",
             "",
             EXTRACTS_MATERIALS_FROM_COMBS,
             "",
@@ -165,7 +165,7 @@ public class ItemStacks {
     public static final SlimefunItemStack ELECTRIC_CENTRIFUGE_2 = new SlimefunItemStack(
             "ELECTRIC_CENTRIFUGE_2",
             Material.IRON_BLOCK,
-            "&7电动离心机 &eII",
+            "&7Centrifugadora eléctrica &eII",
             "",
             EXTRACTS_MATERIALS_FROM_COMBS,
             "",
@@ -178,32 +178,32 @@ public class ItemStacks {
     public static final SlimefunItemStack BEEALYZER = new SlimefunItemStack(
             "BEEALYZER",
             Material.ITEM_FRAME,
-            "&7蜜蜂分析仪",
+            "&7Analizador de abejas",
             "",
             LoreBuilder.powerCharged(0, 50),
             "",
-            "&f养蜂人最信赖的工具",
-            "&f该物品用于识别各种",
-            "&f蜜蜂的特征",
+            "&fLa herramienta de confianza del apicultor",
+            "&fSirve para identificar las distintas",
+            "&fRasgos de la abeja",
             "",
             LoreBuilder.RIGHT_CLICK_TO_USE);
 
     public static final SlimefunItemStack TOME_OF_DISCOVERY_SHARING = new SlimefunItemStack(
             "TOME_OF_DISCOVERY_SHARING",
             Material.ENCHANTED_BOOK,
-            "&6蜜蜂知识巨著",
+            "&6Gran tratado de apicultura",
             loreOwner("None"),
             "",
-            "&e右击&7 绑定你的蜜蜂研究",
+            "&eClic derecho&7 para vincular tus investigaciones de abejas",
             "",
-            "&e右击&7 获取绑定者的所有研究");
+            "&eClic derecho&7 para heredar todas las investigaciones de quien lo vinculó");
 
     public static final CustomItemStack CONSULT_BEE_ATLAS_RECIPE_ITEM = new CustomItemStack(
             Material.ENCHANTED_BOOK,
-            ChatColor.WHITE + "蜜蜂图鉴",
+            ChatColor.WHITE + "Catálogo de abejas",
             "",
-            ChatColor.GRAY + "请查阅蜜蜂图鉴或wiki",
-            ChatColor.GRAY + "以获取更多相关信息");
+            ChatColor.GRAY + "Consulta el catálogo de abejas o la wiki",
+            ChatColor.GRAY + "para más información");
 
     public static final ItemStack[] CONSULT_BEE_ATLAS_RECIPE = new ItemStack[] {
             null, null, null,
@@ -212,9 +212,9 @@ public class ItemStacks {
 
     public static final CustomItemStack CENTRIFUGE_COMB_RECIPE_ITEM = new CustomItemStack(
             Material.HONEYCOMB,
-            ChatColor.YELLOW + "任意蜂蜡",
+            ChatColor.YELLOW + "Cualquier cera",
             "",
-            ChatColor.GRAY + "请将任意蜂蜡放入离心机内");
+            ChatColor.GRAY + "Mete cualquier cera en la centrifugadora");
 
     public static final ItemStack[] CENTRIFUGE_COMB_RECIPE = new ItemStack[] {
             null, null, null,
@@ -224,22 +224,22 @@ public class ItemStacks {
     public static final SlimefunItemStack BEE_BREEDING_STACK = new SlimefunItemStack(
             "_RECIPE_BEE",
             SlimyBeesHeadTexture.PRINCESS.getAsItemStack(),
-            "&e任意雄蜂+雌蜂");
+            "&eCualquier zángano + reina");
     public static final SlimefunItemStack BEE_OFFSPRING_STACK = new SlimefunItemStack(
             "_RECIPE_BEE_OFFSPRING",
             Material.HONEYCOMB,
-            "&6蜜蜂后代");
+            "&6Cría de abeja");
     public static final SlimefunItemStack BEE_PRODUCT_STACK = new SlimefunItemStack(
             "_RECIPE_BEE_PRODUCT",
             Material.HONEYCOMB,
-            "&6蜜蜂产物");
+            "&6Producto de la abeja");
     // </editor-fold>
 
     public static SlimefunItemStack createDrone(String id, String name, boolean enchanted, String... lore) {
         return createBee(
                 id + "_DRONE",
                 SlimyBeesHeadTexture.DRONE.getAsItemStack(),
-                name + "雄蜂",
+                name + "Zángano",
                 enchanted,
                 lore);
     }
@@ -247,7 +247,7 @@ public class ItemStacks {
     public static SlimefunItemStack createPrincess(String id, String name, boolean enchanted, String... lore) {
         return createBee(id + "_PRINCESS",
                 SlimyBeesHeadTexture.PRINCESS.getAsItemStack(),
-                name + "雌蜂",
+                name + "Reina",
                 enchanted,
                 lore);
     }
@@ -272,19 +272,19 @@ public class ItemStacks {
         return new SlimefunItemStack(
                 id + "_COMB",
                 Material.HONEYCOMB,
-                name + "蜂蜡");
+                name + "Cera");
     }
 
     public static String loreProductionModifier(double ratio) {
-        return "&7产量: &8&lx" + String.format("%.1f", ratio);
+        return "&7Producción: &8&lx" + String.format("%.1f", ratio);
     }
 
     public static String loreLifespanModifier(double ratio) {
-        return "&7寿命: &8&lx" + String.format("%.1f", ratio);
+        return "&7Longevidad: &8&lx" + String.format("%.1f", ratio);
     }
 
     public static String loreOwner(String owner) {
-        return "&7主人: &b" + owner;
+        return "&7Dueño: &b" + owner;
     }
 
 }
