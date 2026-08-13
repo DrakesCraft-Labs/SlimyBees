@@ -23,13 +23,13 @@ import cz.martinbrom.slimybees.core.recipe.AbstractRecipe;
 import cz.martinbrom.slimybees.core.recipe.GuaranteedRecipe;
 import cz.martinbrom.slimybees.core.recipe.RandomRecipe;
 import cz.martinbrom.slimybees.core.recipe.RecipeMatchService;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.core.multiblocks.MultiBlockMachine;
-import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.inventory.InvUtils;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-import io.github.thebusybiscuit.slimefun4.libraries.paperlib.PaperLib;
+import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
+import com.github.drakescraft_labs.slimefun4.core.multiblocks.MultiBlockMachine;
+import com.github.drakescraft_labs.slimefun4.implementation.Slimefun;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.inventory.InvUtils;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
+import com.github.drakescraft_labs.slimefun4.libraries.paperlib.PaperLib;
 
 @ParametersAreNonnullByDefault
 public class Centrifuge extends MultiBlockMachine {
@@ -111,7 +111,7 @@ public class Centrifuge extends MultiBlockMachine {
 
     @Override
     protected void registerDefaultRecipes(@Nonnull List<ItemStack> recipes) {
-        CustomItemStack anyComb = new CustomItemStack(Material.HONEYCOMB, ChatColor.YELLOW + "任意蜂蜡");
+        CustomItemStack anyComb = new CustomItemStack(Material.HONEYCOMB, ChatColor.YELLOW + "cera de abejas opcional");
         recipes.add(anyComb);
         recipes.add(ItemStacks.HONEY_DROP);
 
@@ -120,8 +120,8 @@ public class Centrifuge extends MultiBlockMachine {
 
         recipes.add(anyComb);
         recipes.add(new CustomItemStack(Material.DIAMOND,
-                ChatColor.YELLOW + "蜜蜂产出",
-                ChatColor.YELLOW + "详情见蜜蜂册或附属 Wiki"));
+                ChatColor.YELLOW + "salida de abejas",
+                ChatColor.YELLOW + "Para más detalles, consulte el folleto sobre abejas o el documento adjunto. Wiki"));
     }
 
 }

@@ -45,9 +45,9 @@ import cz.martinbrom.slimybees.setup.CategorySetup;
 import cz.martinbrom.slimybees.setup.CommandSetup;
 import cz.martinbrom.slimybees.setup.ItemSetup;
 import cz.martinbrom.slimybees.worldgen.NestPopulator;
-import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
-import io.github.thebusybiscuit.slimefun4.core.services.CustomItemDataService;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
+import com.github.drakescraft_labs.slimefun4.api.SlimefunAddon;
+import com.github.drakescraft_labs.slimefun4.core.services.CustomItemDataService;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.config.Config;
 
 /**
  * This is the main class for the SlimyBees addon
@@ -147,7 +147,7 @@ public class SlimyBeesPlugin extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public String getBugTrackerURL() {
-        return "https://github.com/martinbrom/SlimyBees/issues";
+        return "https://github.com/DrakesCraft-Labs/SlimyBees/issues";
     }
 
     @Nonnull

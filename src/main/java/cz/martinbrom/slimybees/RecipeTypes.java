@@ -3,8 +3,8 @@ package cz.martinbrom.slimybees;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
 
 /**
  * This class holds a static reference to every {@link RecipeType} found in SlimyBees.
@@ -21,25 +21,25 @@ public class RecipeTypes {
     public static final RecipeType BREEDING = new RecipeType(
             SlimyBeesPlugin.getKey("breeding"),
             new CustomItemStack(Material.BEE_SPAWN_EGG,
-                    "&c繁殖",
+                    "&creproducir",
                     "",
-                    "&f在蜂箱中",
-                    "&f繁殖两种特定蜜蜂",
-                    "&f获取"));
+                    "&fen colmena",
+                    "&fCría de dos especies específicas de abejas.",
+                    "&fconseguir"));
 
     public static final RecipeType BEE_PRODUCT = new RecipeType(
             SlimyBeesPlugin.getKey("bee_product"),
             new CustomItemStack(Material.HONEYCOMB,
-                    "&c蜜蜂产物",
+                    "&cproductos de abejas",
                     "",
-                    "&f蜜蜂在蜂箱中工作",
-                    "&f所生产的产物"));
+                    "&fAbejas trabajando en colmena",
+                    "&fproductos producidos"));
 
     public static final RecipeType SBEE_CENTRIFUGE = new RecipeType(
             SlimyBeesPlugin.getKey("sbee_centrifuge"),
             new CustomItemStack(Material.GRINDSTONE,
-                    "&f离心机",
+                    "&fcentrífugo",
                     "",
-                    "&7放入离心机中获取"));
+                    "&7Poner en centrífuga para obtener"));
 
 }

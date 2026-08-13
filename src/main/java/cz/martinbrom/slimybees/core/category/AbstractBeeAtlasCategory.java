@@ -16,21 +16,21 @@ import cz.martinbrom.slimybees.core.SlimyBeesPlayerProfile;
 import cz.martinbrom.slimybees.core.genetics.BeeGeneticService;
 import cz.martinbrom.slimybees.core.genetics.alleles.AlleleRegistry;
 import cz.martinbrom.slimybees.core.genetics.alleles.AlleleSpecies;
-import io.github.thebusybiscuit.slimefun4.api.items.groups.FlexItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.player.PlayerProfile;
-import io.github.thebusybiscuit.slimefun4.core.guide.GuideHistory;
-import io.github.thebusybiscuit.slimefun4.core.guide.SlimefunGuideMode;
-import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
-import io.github.thebusybiscuit.slimefun4.implementation.guide.SurvivalSlimefunGuide;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-import io.github.thebusybiscuit.slimefun4.core.services.sounds.SoundEffect;
-import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
+import com.github.drakescraft_labs.slimefun4.api.items.groups.FlexItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.player.PlayerProfile;
+import com.github.drakescraft_labs.slimefun4.core.guide.GuideHistory;
+import com.github.drakescraft_labs.slimefun4.core.guide.SlimefunGuideMode;
+import com.github.drakescraft_labs.slimefun4.implementation.Slimefun;
+import com.github.drakescraft_labs.slimefun4.implementation.guide.SurvivalSlimefunGuide;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
+import com.github.drakescraft_labs.slimefun4.core.services.sounds.SoundEffect;
+import com.github.drakescraft_labs.slimefun4.utils.ChestMenuUtils;
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
 @ParametersAreNonnullByDefault
 public abstract class AbstractBeeAtlasCategory extends FlexItemGroup {
 
-    protected static final ItemStack UNDISCOVERED_SPECIES_ITEM = new CustomItemStack(Material.BARRIER, ChatColor.GRAY + "未发现物种");
-    protected static final ItemStack UNDISCOVERED_CHANCE_ITEM = new CustomItemStack(Material.BARRIER, ChatColor.GRAY + "未发现几率");
+    protected static final ItemStack UNDISCOVERED_SPECIES_ITEM = new CustomItemStack(Material.BARRIER, ChatColor.GRAY + "Especies no descubiertas");
+    protected static final ItemStack UNDISCOVERED_CHANCE_ITEM = new CustomItemStack(Material.BARRIER, ChatColor.GRAY + "Posibilidad de no ser encontrado");
 
     protected final BeeLoreService loreService;
     protected final BeeRegistry beeRegistry;
@@ -64,7 +64,7 @@ public abstract class AbstractBeeAtlasCategory extends FlexItemGroup {
         }
 
         String suffix = getTitleSuffix();
-        String title = "蜜蜂册" + (suffix == null ? "" : " - " + suffix);
+        String title = "libro de abejas" + (suffix == null ? "" : " - " + suffix);
         ChestMenu menu = createMenu(title);
 
         SurvivalSlimefunGuide guide = (SurvivalSlimefunGuide) Slimefun.getRegistry().getSlimefunGuide(mode);
@@ -77,7 +77,7 @@ public abstract class AbstractBeeAtlasCategory extends FlexItemGroup {
 
         // custom back button
         ItemStack backButton = new CustomItemStack(ChestMenuUtils.getBackButton(p,
-                "", "&f左击: &7返回上一页", "&fShift左击: &7返回主菜单"));
+                "", "&fclic izquierdo: &7Volver a la página anterior", "&fShiftclic izquierdo: &7Volver al menú principal"));
         menu.addItem(1, backButton, (pl, s, i, a) -> {
             if (a.isShiftClicked()) {
                 navigationService.openMainMenu(profile, mode);
@@ -165,7 +165,7 @@ public abstract class AbstractBeeAtlasCategory extends FlexItemGroup {
      */
     protected String createChanceText(double chance) {
         int percentage = (int) Math.ceil(chance * 100);
-        return ChatColor.WHITE + "几率: " + ChatColor.GRAY + percentage + "%";
+        return ChatColor.WHITE + "probabilidad: " + ChatColor.GRAY + percentage + "%";
     }
 
     @Nullable

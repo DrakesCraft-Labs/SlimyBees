@@ -23,8 +23,8 @@ import cz.martinbrom.slimybees.core.genetics.alleles.Allele;
 import cz.martinbrom.slimybees.core.genetics.alleles.AlleleRegistry;
 import cz.martinbrom.slimybees.core.genetics.alleles.AlleleSpecies;
 import cz.martinbrom.slimybees.core.genetics.enums.ChromosomeType;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
-import io.github.thebusybiscuit.slimefun4.utils.FireworkUtils;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.config.Config;
+import com.github.drakescraft_labs.slimefun4.utils.FireworkUtils;
 
 /**
  * This service handles bee discovery related logic
@@ -107,9 +107,9 @@ public class BeeDiscoveryService {
             if (shouldBroadcastDiscoveries) {
                 for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
                     onlinePlayer.sendMessage("" + ChatColor.GOLD + ChatColor.BOLD + playerName
-                            + ChatColor.RESET + ChatColor.WHITE + "第一个发现了"
+                            + ChatColor.RESET + ChatColor.WHITE + "El primero descubierto"
                             + ChatColor.BOLD + getDisplayNameForBroadcast(species, onlinePlayer)
-                            + ChatColor.RESET + ChatColor.WHITE + "物种!");
+                            + ChatColor.RESET + ChatColor.WHITE + "Especies!");
 
                     onlinePlayer.playSound(onlinePlayer.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1F, 1F);
                 }
@@ -215,7 +215,7 @@ public class BeeDiscoveryService {
     private void notifyPlayer(Player p, String name, boolean discover) {
         if (discover) {
             FireworkUtils.launchRandom(p, 1);
-            p.sendMessage(ChatColor.GREEN + "你发现了新物种 - "
+            p.sendMessage(ChatColor.GREEN + "descubriste una nueva especie - "
                     + ChatColor.GRAY + ChatColor.BOLD + name
                     + ChatColor.RESET + ChatColor.GREEN + "!");
         }

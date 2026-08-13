@@ -8,7 +8,7 @@ import cz.martinbrom.slimybees.Categories;
 import cz.martinbrom.slimybees.SlimyBeesPlugin;
 import cz.martinbrom.slimybees.core.category.BeeAtlasCategoryFactory;
 import cz.martinbrom.slimybees.utils.SlimyBeesHeadTexture;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
 
 /**
  * This is the place where all categories from SlimyBees are registered.
@@ -30,7 +30,7 @@ public class CategorySetup {
 
         Categories.ITEMS.register(plugin);
 
-        ItemStack displayItem = new CustomItemStack(SlimyBeesHeadTexture.DRONE.getAsItemStack(), "蜜蜂册");
+        ItemStack displayItem = new CustomItemStack(SlimyBeesHeadTexture.DRONE.getAsItemStack(), "libro de abejas");
         factory.createList(displayItem).register(plugin);
     }
 }

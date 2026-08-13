@@ -17,16 +17,16 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 import cz.martinbrom.slimybees.SlimyBeesPlugin;
 import cz.martinbrom.slimybees.core.BeeAnalysisService;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemSetting;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.api.items.settings.DoubleRangeSetting;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.core.attributes.Rechargeable;
-import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
-import io.github.thebusybiscuit.slimefun4.implementation.items.SimpleSlimefunItem;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
+import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.items.ItemSetting;
+import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
+import com.github.drakescraft_labs.slimefun4.api.items.settings.DoubleRangeSetting;
+import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
+import com.github.drakescraft_labs.slimefun4.core.attributes.Rechargeable;
+import com.github.drakescraft_labs.slimefun4.core.handlers.ItemUseHandler;
+import com.github.drakescraft_labs.slimefun4.implementation.items.SimpleSlimefunItem;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
+import com.github.drakescraft_labs.slimefun4.utils.ChestMenuUtils;
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
 
 /**
@@ -68,8 +68,8 @@ public class Beealyzer extends SimpleSlimefunItem<ItemUseHandler> implements Rec
             if (removeItemCharge(e.getItem(), analyzeCost.getValue().floatValue())) {
                 createMenu().open(p);
             } else {
-                p.sendMessage("蜜蜂分析仪没有足够的能量来正常工作! " +
-                        "使用充电台为其充电");
+                p.sendMessage("Bee Analyzer no tiene suficiente potencia para funcionar correctamente! " +
+                        "Utilice una estación de carga para cargarlo");
             }
         };
     }
@@ -81,7 +81,7 @@ public class Beealyzer extends SimpleSlimefunItem<ItemUseHandler> implements Rec
 
     @Nonnull
     private ChestMenu createMenu() {
-        ChestMenu menu = new ChestMenu("蜜蜂分析仪");
+        ChestMenu menu = new ChestMenu("analizador de abejas");
 
         for (int slot : BACKGROUND_SLOTS) {
             menu.addItem(slot, ChestMenuUtils.getBackground(), (p, s, i, a) -> false);

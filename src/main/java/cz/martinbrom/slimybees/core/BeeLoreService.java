@@ -16,7 +16,7 @@ import cz.martinbrom.slimybees.core.genetics.Chromosome;
 import cz.martinbrom.slimybees.core.genetics.Genome;
 import cz.martinbrom.slimybees.core.genetics.enums.ChromosomeType;
 import cz.martinbrom.slimybees.items.bees.AbstractBee;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
 
 /**
  * This service manipulates lore for bee-related {@link ItemStack}s.
@@ -24,7 +24,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 @ParametersAreNonnullByDefault
 public class BeeLoreService {
 
-    public static final String UNKNOWN_LORE = ChatColor.DARK_GRAY + "<未知>";
+    public static final String UNKNOWN_LORE = ChatColor.DARK_GRAY + "<desconocido>";
 
     /**
      * Checks whether the given {@link ItemStack} is considered to be an "unknown" bee

@@ -15,9 +15,9 @@ import cz.martinbrom.slimybees.core.SlimyBeesPlayerProfile;
 import cz.martinbrom.slimybees.core.genetics.BeeGeneticService;
 import cz.martinbrom.slimybees.core.genetics.alleles.AlleleRegistry;
 import cz.martinbrom.slimybees.core.genetics.alleles.AlleleSpecies;
-import io.github.thebusybiscuit.slimefun4.api.player.PlayerProfile;
-import io.github.thebusybiscuit.slimefun4.core.guide.SlimefunGuideMode;
-import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
+import com.github.drakescraft_labs.slimefun4.api.player.PlayerProfile;
+import com.github.drakescraft_labs.slimefun4.core.guide.SlimefunGuideMode;
+import com.github.drakescraft_labs.slimefun4.utils.ChestMenuUtils;
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
 
 // impl mostly copied from Slimefun4 MultiCategory
@@ -26,8 +26,8 @@ public class BeeAtlasListCategory extends AbstractBeeAtlasCategory {
 
     private static final int CATEGORY_SIZE = 36;
     private static final List<String> CHEAT_MODE_BEE_LORE = Arrays.asList("",
-            ChatColor.YELLOW + "左击" + ChatColor.GRAY + " 获取 " + ChatColor.BOLD + "雌蜂",
-            ChatColor.YELLOW + "右击" + ChatColor.GRAY + " 获取 " + ChatColor.BOLD + "雄蜂");
+            ChatColor.YELLOW + "clic izquierdo" + ChatColor.GRAY + " conseguir " + ChatColor.BOLD + "abeja hembra",
+            ChatColor.YELLOW + "clic derecho" + ChatColor.GRAY + " conseguir " + ChatColor.BOLD + "Zumbido");
 
     public static final int PREVIOUS_PAGE_SLOT = 46;
     public static final int NEXT_PAGE_SLOT = 52;

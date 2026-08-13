@@ -16,7 +16,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabExecutor;
 
 import cz.martinbrom.slimybees.SlimyBeesPlugin;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.common.ChatColors;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.common.ChatColors;
 
 @ParametersAreNonnullByDefault
 public class CommandTabExecutor implements TabExecutor {

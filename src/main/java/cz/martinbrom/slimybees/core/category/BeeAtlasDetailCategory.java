@@ -27,10 +27,10 @@ import cz.martinbrom.slimybees.core.recipe.ChanceItemStack;
 import cz.martinbrom.slimybees.setup.BeeSetup;
 import cz.martinbrom.slimybees.setup.SpeciesUids;
 import cz.martinbrom.slimybees.utils.SlimyBeesHeadTexture;
-import io.github.thebusybiscuit.slimefun4.api.player.PlayerProfile;
-import io.github.thebusybiscuit.slimefun4.core.guide.SlimefunGuideMode;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
+import com.github.drakescraft_labs.slimefun4.api.player.PlayerProfile;
+import com.github.drakescraft_labs.slimefun4.core.guide.SlimefunGuideMode;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
+import com.github.drakescraft_labs.slimefun4.utils.ChestMenuUtils;
 import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
 
 @ParametersAreNonnullByDefault
@@ -43,15 +43,15 @@ public class BeeAtlasDetailCategory extends AbstractBeeAtlasCategory {
 
     protected static final CustomItemStack ANY_NEST_BEE = new CustomItemStack(
             SlimyBeesHeadTexture.DRONE.getAsItemStack(),
-            ChatColor.GRAY + "任意蜂蜡");
+            ChatColor.GRAY + "cera de abejas opcional");
 
     protected static final CustomItemStack OTHER_NEST_BEE = new CustomItemStack(
             SlimyBeesHeadTexture.DRONE.getAsItemStack(),
-            ChatColor.GRAY + "任意其他蜂蜡");
+            ChatColor.GRAY + "cualquier otra cera de abejas");
 
     protected static final CustomItemStack OBTAINED_NEST_ITEM = new CustomItemStack(
             Material.BEE_NEST,
-            ChatColor.DARK_GREEN + "在世界中发现");
+            ChatColor.DARK_GREEN + "descubierto en el mundo");
 
     private final AlleleSpecies categorySpecies;
 
@@ -128,8 +128,8 @@ public class BeeAtlasDetailCategory extends AbstractBeeAtlasCategory {
             addCultivatedParents(menu, profile, sbProfile);
         } else {
             menu.addItem(CHANCE_ITEM_SLOT, new CustomItemStack(Material.BEEHIVE,
-                    ChatColor.GOLD + "获取途径不止一种",
-                    ChatColor.GOLD + "请参考wiki!"), ChestMenuUtils.getEmptyClickHandler());
+                    ChatColor.GOLD + "Hay más de una forma de conseguirlo.",
+                    ChatColor.GOLD + "Por favor consultewiki!"), ChestMenuUtils.getEmptyClickHandler());
         }
     }
 

@@ -33,7 +33,7 @@ import cz.martinbrom.slimybees.utils.PatternUtil;
 import cz.martinbrom.slimybees.utils.StringUtils;
 import cz.martinbrom.slimybees.utils.types.Triple;
 import cz.martinbrom.slimybees.worldgen.NestDTO;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
 
 /**
  * This class is used to easily register bee species with everything related to it.
@@ -295,7 +295,7 @@ public class BeeBuilder {
             SlimefunItemStack nestItemStack = new SlimefunItemStack(
                     species.getName() + "_BEE_NEST",
                     Material.BEEHIVE,
-                    color + species.getDisplayName() + "蜂蜡");
+                    color + species.getDisplayName() + "cera de abejas");
 
             BeeNest nestBlock = new BeeNest(nestItemStack, species.getPrincessItemStack(), species.getDroneItemStack());
             nestBlock.addRandomDrop(new RandomizedItemStack(ItemStacks.HONEY_COMB, 1, 3));

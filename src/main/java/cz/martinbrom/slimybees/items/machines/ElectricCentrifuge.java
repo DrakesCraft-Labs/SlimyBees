@@ -13,12 +13,12 @@ import org.bukkit.inventory.ItemStack;
 import cz.martinbrom.slimybees.ItemStacks;
 import cz.martinbrom.slimybees.core.machine.AbstractElectricMachine;
 import cz.martinbrom.slimybees.utils.MenuUtils;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
-import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
+import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
+import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
+import com.github.drakescraft_labs.slimefun4.utils.ChestMenuUtils;
+import com.github.drakescraft_labs.slimefun4.legacy.api.inventory.BlockMenuPreset;
 
 @ParametersAreNonnullByDefault
 public class ElectricCentrifuge extends AbstractElectricMachine {
@@ -70,7 +70,7 @@ public class ElectricCentrifuge extends AbstractElectricMachine {
     public List<ItemStack> getDisplayRecipes() {
         List<ItemStack> displayRecipes = new ArrayList<>();
 
-        CustomItemStack anyComb = new CustomItemStack(Material.HONEYCOMB, ChatColor.YELLOW + "任意蜂蜡");
+        CustomItemStack anyComb = new CustomItemStack(Material.HONEYCOMB, ChatColor.YELLOW + "cera de abejas opcional");
         displayRecipes.add(anyComb);
         displayRecipes.add(ItemStacks.HONEY_DROP);
 
@@ -79,8 +79,8 @@ public class ElectricCentrifuge extends AbstractElectricMachine {
 
         displayRecipes.add(anyComb);
         displayRecipes.add(new CustomItemStack(Material.DIAMOND,
-                ChatColor.YELLOW + "蜜蜂产出",
-                ChatColor.YELLOW + "详情见蜜蜂册或附属 Wiki"));
+                ChatColor.YELLOW + "salida de abejas",
+                ChatColor.YELLOW + "Para más detalles, consulte el folleto sobre abejas o el documento adjunto. Wiki"));
 
         return displayRecipes;
     }

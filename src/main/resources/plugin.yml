@@ -1,10 +1,10 @@
 name: SlimyBees
-author: martinbrom
+authors: [martinbrom, JackStar]
 description: Forestry Bees Inspired Addon for Slimefun 4
 main: cz.martinbrom.slimybees.SlimyBeesPlugin
 website: https://github.com/martinbrom/SlimyBees
 version: ${project.version}
-api-version: 1.16
+api-version: '1.21'
 depend:
   - Slimefun
 commands:
