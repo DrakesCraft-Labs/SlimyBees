@@ -1,22 +1,42 @@
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=martinbrom_SlimyBees&metric=alert_status)](https://sonarcloud.io/dashboard?id=martinbrom_SlimyBees)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=martinbrom_SlimyBees&metric=coverage)](https://sonarcloud.io/dashboard?id=martinbrom_SlimyBees)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=martinbrom_SlimyBees&metric=ncloc)](https://sonarcloud.io/dashboard?id=martinbrom_SlimyBees)
+<p align="center">
+  <img src="docs/banner.svg" width="100%" alt="SLIMYBEES Animated Banner" />
+</p>
 
-# abejas forestales
+# SlimyBees
 
-SlimyBees is a Slimefun4 addon heavily inspired by the bee portion of the famous MC mod,
-[Forestry](https://www.curseforge.com/minecraft/mc-mods/forestry).
-It adds many bee species which can be discovered, bred and used to produce various materials.
-The productivity of each bee is also determined by its allele values,
-which can be improved by selective breeding, offering a fun mini-game for the endgame stages. 
+Addon de **Slimefun 4** inspirado en la mecánica de apicultura y genética del legendario mod *Forestry*. Introduce múltiples especies de abejas, cría selectiva, mutaciones genéticas y producción automatizada de recursos y mieles especiales. Portado y adaptado por **DrakesCraft Labs** para Paper/Purpur 1.21.11 en Java 21.
 
-## Features
-Features currently include:
-* Bee Hive world generation
-* The ability to breed bees to discover new species
-* Basic set of species (mainly honey production for now)
+---
 
-## Credits
-Many thanks go to:
-* SirSengir and the team behind Forestry
-* TheBusyBiscuit and the team behind Slimefun4 
+## 🎯 Objetivo
+
+Ofrecer un sistema de progresión agrícola y biológica de juego tardío (*endgame*), donde los jugadores descubren nuevas especies de abejas mediante cruces controlados para producir metales, gemas, polvos y recursos exóticos.
+
+---
+
+## ⚡ Características Principales
+
+- **Genética y Alelos de Abejas**:
+  - Cada abeja posee rasgos genéticos heredables (velocidad de producción, vida útil, tolerancia al clima y área de efecto).
+- **Colmenas en el Mundo**:
+  - Generación natural de colmenas salvajes en diversos biomas para iniciar la recolección de reinas y zánganos.
+- **Centrífugas e Incubadoras**:
+  - Maquinaria Slimefun para extraer gotas de miel, cera y procesar panales en recursos minerales.
+- **Protección de NBT**:
+  - Totalmente blindado contra pérdidas de datos y compatible con el core de Slimefun 1.21.11.
+
+---
+
+## 🛠️ Entorno y Compatibilidad
+
+- **Servidor**: Paper / Purpur 1.21.11
+- **Java**: 21
+- **Dependencias**:
+  - `Slimefun4-Drake`
+
+---
+
+## 📜 Créditos y Origen
+
+- **Autor original**: `martinbrom` (Inspirado en *Forestry* de `SirSengir`)
+- **Adaptación y Mantenimiento 1.21.11**: **DrakesCraft Labs**
