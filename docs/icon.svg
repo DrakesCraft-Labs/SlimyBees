@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="SlimyBees">
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#131C2E"/>
+    </linearGradient>
+    <linearGradient id="acG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#F97316"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#FACC15" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#FACC15" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Fondo redondeado: Modrinth recorta a circulo en las tarjetas, asi que el contenido
+       importante se mantiene dentro del 70% central para que no se pierda al recortar. -->
+  <rect width="512" height="512" rx="96" fill="url(#fondo)"/>
+  <rect width="512" height="512" rx="96" fill="url(#halo)"/>
+  <rect x="4" y="4" width="504" height="504" rx="92" fill="none" stroke="url(#acG)" stroke-width="6" opacity="0.55"/>
+
+  <g transform="translate(256,248) scale(2.45)">
+
+    <ellipse cx="0" cy="6" rx="20" ry="26" fill="#0F172A" stroke="url(#acG)" stroke-width="3.5"/>
+    <path d="M -19 -4 L 19 -4 M -20 8 L 20 8 M -17 20 L 17 20" stroke="#FACC15" stroke-width="4"/>
+    <ellipse cx="-24" cy="-14" rx="15" ry="9" fill="#F97316" opacity="0.55" transform="rotate(-25 -24 -14)"></ellipse>
+    <ellipse cx="24" cy="-14" rx="15" ry="9" fill="#F97316" opacity="0.55" transform="rotate(25 24 -14)"></ellipse>
+  </g>
+</svg>
