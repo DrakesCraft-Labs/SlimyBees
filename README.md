@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/SlimyBees/master/docs/banner.svg" width="100%" alt="SLIMYBEES Animated Banner" />
+  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/SlimyBees/master/banner.svg" width="100%" alt="SLIMYBEES Animated Banner" />
 </p>
 
 # SlimyBees
