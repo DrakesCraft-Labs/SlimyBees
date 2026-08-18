@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/banner.svg" alt="SlimyBees" width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/DrakesCraft-Labs/SlimyBees/main/banner.svg" alt="SlimyBees" width="100%"></p>
 
 # SlimyBees
 
