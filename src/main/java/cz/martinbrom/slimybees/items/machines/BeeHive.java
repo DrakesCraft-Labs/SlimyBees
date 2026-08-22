@@ -256,11 +256,17 @@ public class BeeHive extends AbstractTickingContainer implements MachineProcessH
         }
 
         // drop any leftover items on the ground
-        World world = b.getWorld();
-        Location location = b.getLocation();
+        dropLeftoversSafely(b.getWorld(), b.getLocation(), leftoverItems);
+    }
+
+    static void dropLeftoversSafely(World world, Location location, List<ItemStack> leftoverItems) {
         for (ItemStack item : leftoverItems) {
             if (item != null) {
-                world.dropItemNaturally(location, item);
+                ItemStack leftover = item.clone();
+                // Hive tickers run asynchronously, while spawning an item entity must happen
+                // on the server thread. Scheduling only the world mutation keeps the machine
+                // asynchronous without losing products when every output slot is full.
+                Slimefun.runSync(() -> world.dropItemNaturally(location, leftover));
             }
         }
     }
